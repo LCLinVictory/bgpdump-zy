@@ -1,7 +1,7 @@
 This is a modified version of bgpdump based on another modification
 [by dkhenry](https://bitbucket.org/dkhenry/bgpdump) 
 
-Use the below commond to see the modifications
+Use the below command to see the modifications
 
 ```
 $ grep -n "by yzhang" *.[ch]
@@ -17,7 +17,7 @@ util.c:81:    return;                         /* by yzhang */
 == libBGPdump ==
 
 A C library designed to help with analyzing dump
-files produced by Zebra/Quagga or MRT. Documenation
+files produced by Zebra/Quagga or MRT. Documentation
 is available at:
 
 https://bitbucket.org/ripencc/bgpdump/wiki/Home
