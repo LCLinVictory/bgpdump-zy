@@ -1,16 +1,17 @@
-This is a modified version of bgpdump.
+This is a modified version of bgpdump based on another modification
+[by dkhenry](https://bitbucket.org/dkhenry/bgpdump) 
 
 Use the below commond to see the modifications
 
 ```
-$ grep 'by yzhang' *.[ch]
-bgpdump_attr.h:#define MAX_PREFIXES 2000  /* Change to 2000 from 1000 by yzhang */
-util.c:/* disable tim2str() to save half time by yzhang */
-util.c:void time2str(struct tm* date,char *time_str) /* by yzhang */
-util.c:{                                   /* by yzhang */
-util.c:    char tmp_str[10];               /* by yzhang */
-util.c:    tmp_str[0] = '\0';              /* by yzhang */
-util.c:    return;                         /* by yzhang */
+$ grep -n "by yzhang" *.[ch]
+bgpdump_attr.h:215:#define MAX_PREFIXES 2000  /* Change to 2000 from 1000 by yzhang */
+util.c:76:/* disable tim2str() to save half time by yzhang */
+util.c:77:void time2str(struct tm* date,char *time_str) /* by yzhang */
+util.c:78:{                                   /* by yzhang */
+util.c:79:    char tmp_str[10];               /* by yzhang */
+util.c:80:    tmp_str[0] = '\0';              /* by yzhang */
+util.c:81:    return;                         /* by yzhang */
 ``` 
 
 == libBGPdump ==
