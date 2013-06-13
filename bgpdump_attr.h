@@ -212,7 +212,7 @@ struct prefix {
     u_char		len;
 };
 
-#define MAX_PREFIXES 2000  /* Change to 2000 from 1000 by yzhang*/
+#define MAX_PREFIXES 2000  /* Change to 2000 from 1000 by yzhang */
 struct mp_nlri {
   u_char		nexthop_len;
 

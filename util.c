@@ -73,12 +73,12 @@ void err(const char *fmt, ...) { log(ERR, error); }
 void warn(const char *fmt, ...) { log(WARNING, warn); }
 void debug(const char *fmt, ...) { log(INFO, info); }
 
-void time2str(struct tm* date,char *time_str)
-{
-    char tmp_str[10];
 /* disable tim2str() to save half time by yzhang */
-    tmp_str[0] = '\0';
-    return;
+void time2str(struct tm* date,char *time_str) /* by yzhang */
+{                                   /* by yzhang */
+    char tmp_str[10];               /* by yzhang */
+    tmp_str[0] = '\0';              /* by yzhang */
+    return;                         /* by yzhang */
     
     if (date->tm_mon+1<10)
         sprintf(tmp_str,"0%d/",date->tm_mon+1);
